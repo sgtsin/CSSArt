@@ -1,3 +1,5 @@
+@import "../css/base/_mixins";
+
 @function windowmaker($color, $startingX, $startingY, $number, $distance, $blur){
     $windows:  #{$startingX $startingY $blur $color};
     @for $i from 1 through $number{
@@ -70,6 +72,7 @@ $stars-color: lighten(yellow, 35%);
     animation-name: stars;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .saucer{
@@ -136,6 +139,8 @@ $stars-color: lighten(yellow, 35%);
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
+
+@include menuCreator($ship-color, 5%);
 
 
 

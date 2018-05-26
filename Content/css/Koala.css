@@ -116,4 +116,35 @@
   left: 20%;
   top: -5%;
 }
-/*# sourceMappingURL=style.css.map */
+
+.menu {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  margin-top: 5%;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid #25a9fc;
+  left: calc(50% - 50px);
+}
+
+.menu:after {
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 60px;
+  background: #25a9fc;
+  top: 50px;
+  left: -50px;
+}
+
+.menu:before {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 30px;
+  background: #25a9fc;
+  top: 5px;
+  left: 25px;
+}
+/*# sourceMappingURL=Koala.css.map */

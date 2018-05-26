@@ -1,9 +1,12 @@
+@import "../css/base/_mixins";
+
 $skin-color: #a6becf;
 $face-height: 67%;
 $face-width: 50%;
 $eye-white-color: white;
 $eye-iris-color: black;
 $nose-color: #8d5d20;
+$back-color: #25a9fc;
 
 *{
     padding: 0;
@@ -17,7 +20,7 @@ $nose-color: #8d5d20;
     margin-top: 8%;
     width: 600px;
     height: 420px;
-    background: #25a9fc;
+    background: $back-color;
 }
 
 .face{
@@ -124,4 +127,6 @@ $nose-color: #8d5d20;
         top: -5%
     }
 }
+
+@include menuCreator($back-color, 5%);
 

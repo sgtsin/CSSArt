@@ -1,0 +1,32 @@
+@mixin menuCreator($color, $margin-top){
+    .menu {
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        margin-top: $margin-top;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 50px solid $color;
+        left: calc(50% - 50px);
+
+        &:after{
+            position: absolute;
+            content: '';
+            width: 100px;
+            height: 60px;
+            background: $color;
+            top: 50px;
+            left: -50px;
+        }
+
+        &:before{
+            position: absolute;
+            content: '';
+            width: 10px;
+            height: 30px;
+            background: $color;
+            top: 5px;
+            left: 25px;
+        }
+    }
+}
